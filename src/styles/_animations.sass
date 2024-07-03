@@ -1,0 +1,10 @@
+@keyframes shimmer
+  from
+    background-position: 200% 0
+  to
+    background-position: -200% 0
+
+.shimmer
+  animation: shimmer 1.5s linear infinite
+  background: #f0f0f0 linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.1) 25%, transparent 50%)
+  background-size: 200% 100%

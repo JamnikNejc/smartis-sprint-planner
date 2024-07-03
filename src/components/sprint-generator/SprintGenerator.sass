@@ -1,0 +1,73 @@
+@import '../../styles/_variables'
+
+$column-title-font-weight: 800
+
+.sprint-generator
+
+  user-select: none
+
+  padding: $spacing-std
+  padding-top: $spacing-std
+
+  background-color: white
+  border-radius: $spacing-std
+
+  border-radius: $border-radius-std
+  display: flex
+  flex-direction: column
+  overflow: hidden
+
+  height: fit-content
+  max-height: 100%
+
+  .title
+    background-color: white
+    color: $primary-color
+    font-size: $font-size-l
+    font-weight: $column-title-font-weight
+    text-align: center
+    
+    padding: $spacing-std
+    border-bottom: 1px solid $primary-color
+
+
+
+  .story-points-indicator
+    display: flex
+
+    padding-top: $spacing-std
+    padding-bottom: $spacing-std
+
+    align-items: center
+
+    .remaining-story-points
+
+      padding-left: $spacing-std
+      font-size: $font-size-sm
+      font-weight: 700
+      color: $primary-color
+
+
+  .inputs
+
+    display: flex
+    flex-direction: column
+    gap: $spacing-std
+    font-size: $font-size-xs
+
+  .sprint-interval-input
+
+    display: flex
+    width: 100%
+    gap: $spacing-std
+
+  .team-members
+    display: flex
+    gap: $spacing-std
+    padding: $spacing-std 
+
+
+  .team-count-overflow
+
+    margin-top: auto
+    text-align: center

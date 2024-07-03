@@ -1,0 +1,43 @@
+@import '../../../styles/_variables'
+
+.input
+  color: $primary-color
+  background-color: white
+  width: 100%
+  border-radius: $border-radius-std
+  border: none
+  padding-left: $spacing-std
+  padding-right: $spacing-std
+
+.input:focus-visible
+  outline: 2px solid $primary-color
+
+.input::placeholder
+  color: $primary-color
+  opacity: 1
+  /* Firefox */
+
+.input::-ms-input-placeholder
+ /* Edge 12 -18 */
+ color: $primary-color
+
+.typeahead
+  position: relative
+
+.dropdown
+  width: 100%
+  position: absolute
+  background-color: white
+  border-radius: $border-radius-std
+  border: 1px solid $accent-color
+
+.option
+
+  display: flex
+  flex-direction: row
+
+  .label
+    flex-grow: 1
+
+  :hover
+    background-color: $primary-light-color

@@ -1,0 +1,1 @@
+export type ModalCloseEvent<T> = {type: "close"} | { type: "submit", data: T }
