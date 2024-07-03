@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client"
 const httpLink = createHttpLink({
   uri: "https://immune-tarpon-93.hasura.app/v1/graphql",
   headers: {
-    "x-hasura-admin-secret": "yEzc7jWO3nVzQc7hrdExoEys5lgToa3Gr7W80KY87xA82NOQ9d1kfoaBczguaTtQ",
+    "x-hasura-admin-secret": process.env.REACT_APP_HASURA_KEY ?? ""
   }
 })
 
